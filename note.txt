@@ -6,3 +6,12 @@ volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/src:/opt/airflow/src
     - ${AIRFLOW_PROJ_DIR:-.}/requirements.txt:/opt/airflow/requirements.txt
+
+url = "https://linkedin-data-api.p.rapidapi.com/search-jobs-v2"
+
+querystring = {"keywords":"data engineer","locationId":"104195383","datePosted":"anyTime","sort":"mostRelevant"}
+
+headers = {
+	"x-rapidapi-key": "3e91c0dc89mshc23aeb55eb34c6dp1dd327jsndcd4a975b727",
+	"x-rapidapi-host": "linkedin-data-api.p.rapidapi.com"
+}
